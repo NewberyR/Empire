@@ -1,0 +1,65 @@
+h1{
+    color: #219ebc;
+    font-family: serif;
+}
+table{
+    font-size: 20px;
+    width: auto;
+    padding: 50px;
+    margin: auto;
+    background-color: #f0efeb;
+}
+button{
+    height: 25px;
+    width: 150px;
+    margin-top: 0em;
+    margin-left: auto;
+    font-size: 1em;
+    position: relative;
+    left: 45%;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-color: black;
+    background-color:#f0efeb;
+    color: #219ebc;
+}
+button:hover {
+    font-size: 1em;
+    padding: 0px 1em;
+    background-color: #003566;
+    color: white;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 0.5em;   
+}
+section fieldset.company-info{
+    width: 60%;
+    margin: auto;
+    background-color: #f0efeb;
+}
+section fieldset.person-of-contact{
+    width: 60%;
+    margin: auto;
+    background-color: #f0efeb;
+}
+section fieldset.service-type{
+    width: 60%;
+    margin: auto;
+    background-color: #f0efeb;  
+}
+textarea{
+    height: 150px;
+    width: 400px;
+    background-color: white; 
+}
+footer{
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    width: 500;
+    background-color: #f0efeb; 
+    text-align: center;
+    border: 500px;
+    border-style: solid;border-color: black;
+    border-width: 1px;
+}

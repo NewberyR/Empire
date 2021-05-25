@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Empire Tri-State Service Request</title>
+  <link rel="stylesheet" href="file:///Users/Newbery/Desktop/News%20Dev%20Projects/Empire%20Service%20Req/Empire.css">
   <table>
     <tr>
-      <td> <img src="empirelogo.png" alt="Empire Tri-State Service"> </td>
+      <td> <img src="file:///Users/Newbery/Desktop/News%20Dev%20Projects/Empire%20Service%20Req/empirelogo.png"
+          alt="Empire Tri-State Service"> </td>
       <td>
         <h1>Service Request Form</h1>
         Electronic Security Integrator <br>
@@ -20,81 +22,90 @@
 </head>
 
 <body>
-  <form action="SEND ADDRESS" id="Service Request" method="POST" accept-charset="UTF-8">
-    <fieldset>
-      <legend>
-        <h3>Company Information</h3>
-      </legend>
-      <label for="Comapny Information">Company Name</label><br>
-      <input type="text" name="company name" placeholder="Company" value="" required><br>
-      <br>
-      <label for="Service Request">Date of Service</label>
-      <input type="date" name="Service Request" required>
-      <Span>
-        <label>
-          Time
-          <select multiplename="Times">
-            <option>Select One</option>
-            <option>9:00AM</option>
-            <option>10:00AM</option>
-            <option>11:00AM</option>
-            <option>12:00PM</option>
-            <option>1:00PM</option>
-            <option>2:00PM</option>
-            <option>3:00PM</option>
-            <option>4:00PM</option>
-            <option>5:00PM</option>
-          </select>
+  <form action="SEND ADDRESS" id="Service-Request" method="POST" accept-charset="UTF-8">
+    <section>
+      <fieldset class="company-info">
+        <legend>
+          <h3>Company Information</h3>
+        </legend>
+        <label for="company-info">Company Name</label><br>
+        <input type="text" name="company-name" placeholder="Company" value="" required>
+        <span>
+          <label for="Service Request">Date of Service</label>
+          <input type="date" name="Service Request" required>
+        </span>
+        <span>
+          <label>
+            Time
+            <select multiplename="Times">
+              <option>Select One</option>
+              <option>9:00AM</option>
+              <option>10:00AM</option>
+              <option>11:00AM</option>
+              <option>12:00PM</option>
+              <option>1:00PM</option>
+              <option>2:00PM</option>
+              <option>3:00PM</option>
+              <option>4:00PM</option>
+              <option>5:00PM</option>
+            </select>
+          </label>
+        </Span>
+        <br>
+        <br>
+        <label for="Location Address">Location Address</label><br>
+        <input type="ADDRESS" name="company adress" placeholder="Address" required>
+        <input type="ADDRESS" name="Address" placeholder="Apt, Suite, Floor" required><br><br>
+        <input type="City" name="Address" placeholder="City" required>
+        <input type="State" name="Address" placeholder="State" required>
+        <input type="Zip" name="Address" placeholder="Zip Code" required>
+      </fieldset>
+    </section>
+
+
+    <section>
+      <fieldset class="person-of-contact">
+        <legend>
+          <h3>Person of Contact</h3>
+        </legend>
+        <label for="Service Request">Name</label>
+        <input type="text" name="name" placeholder="Full Name" required><br><br>
+        <label for="Service Request">Email</label>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <label for="Service Request">Mobile</label>
+        <input type="tel" name="phone" placeholder="(888) 888-8888" required><br><br>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset class="service-type">
+        <legend>
+          <h3>Service Type</h3>
+        </legend>
+        <label for="Service Type">Service Type</label>
+        <select multiplename="Times">
+          <option>Select One</option>
+          <option>Access Control System</option>
+          <option>Door Locks / Strikes Malfunctioning</option>
+          <option>CCTV / IP Video System</option>
+          <option>Network Connectivity</option>
+          <option>Intercom System</option>
+          <option>Automated Gate(s)</option>
+        </select>
+        <br>
+        <br>
+        <label for="Description of Issue">
+          Description of Issue(s): <br>
+          <textarea name="name" rows="8" cols="40"></textarea>
         </label>
-      </Span>
-      <br>
-      <br>
-      <label for="Location Address">Location Address</label><br>
-      <input type="ADDRESS" name="company adress" placeholder="Address" required>
-      <input type="ADDRESS" name="Address" placeholder="Apt, Suite, Floor" required><br><br>
-      <input type="City" name="Address" placeholder="City" required>
-      <input type="State" name="Address" placeholder="State" required>
-      <input type="Zip" name="Address" placeholder="Zip Code" required>
-    </fieldset>
-    <fieldset>
-      <legend>
-        <h3>Person of Contact</h3>
-      </legend>
-      <label for="Service Request">Name</label>
-      <input type="text" name="name" placeholder="Full Name" required><br><br>
-      <label for="Service Request">Email</label>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <label for="Service Request">Mobile</label>
-      <input type="tel" name="phone" placeholder="(888) 888-8888" required><br><br>
-    </fieldset>
-    <fieldset>
-      <legend>
-        <h3>Service Type</h3>
-      </legend>
-      <label for="Service Type">Service Type</label>
-      <select multiplename="Times">
-        <option>Select One</option>
-        <option>Access Control System</option>
-        <option>Door Locks / Strikes Malfunctioning</option>
-        <option>CCTV / IP Video System</option>
-        <option>Network Connectivity</option>
-        <option>Intercom System</option>
-        <option>Automated Gate(s)</option>
-      </select>
-      <br>
-      <br>
-      <label for="Description of Issue">
-        Description of Issue(s): <br>
-        <textarea name="name" rows="8" cols="40"></textarea>
-      </label>
-    </fieldset>
-      <br>
-        <div class="btns">
-         <input type="Submit" value="Submit Request">
-       </div>
+      </fieldset>
+    </section>
+    <br>
+    <button class="submit-request">Submit Request</button>
   </form>
+  <br>
 </body>
 <footer>
+  <p>Empire Tri-State Service, LLC. • 52 Keasler Avenue • Lodi, NJ 07644 • 201-873-0095 •</p>
   <p><a href="http://www.empiretristate.com">Empire Tri-State Service</a></p>
 </footer>
 
