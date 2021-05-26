@@ -17,8 +17,6 @@ table{
 button{
      height: 25px;
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1em;
     border-width: .5px;
     border-radius: 0.5em;
